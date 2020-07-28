@@ -12,7 +12,7 @@ summary(iris)
 summary(iris[sample.index,]) ## Our goal is to get the same representation like the regular iris dataset
 
 # Stratified Random Sampling
-install.packages('splitstackshape')
+#install.packages('splitstackshape')
 library(splitstackshape) 
 summary(stratified(iris, "Sepal.Length", 0.7))
 summary(stratified(iris, c("Petal.Width","Sepal.Width"), 0.7))
